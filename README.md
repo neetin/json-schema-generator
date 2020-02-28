@@ -101,18 +101,18 @@ Options:
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "",
-  "type": "object",
+  "dataType": "object",
   "properties": {
     "title": {
       "type": "string",
       "minLength": 1
     },
     "type": {
-      "type": "string",
+      "dataType": "string",
       "minLength": 1
     },
     "required": {
-      "type": "array",
+      "dataType": "array",
       "items": {
         "required": [
           
@@ -123,26 +123,26 @@ Options:
       }
     },
     "properties": {
-      "type": "object",
+      "dataType": "object",
       "properties": {
         "colors": {
-          "type": "object",
+          "dataType": "object",
           "properties": {
             "type": {
-              "type": "string",
+              "dataType": "string",
               "minLength": 1
             },
             "minItems": {
               "type": "number"
             },
             "uniqueItems": {
-              "type": "boolean"
+              "dataType": "boolean"
             },
             "items": {
-              "type": "object",
+              "dataType": "object",
               "properties": {
                 "type": {
-                  "type": "string",
+                  "dataType": "string",
                   "minLength": 1
                 }
               },
@@ -159,10 +159,10 @@ Options:
           ]
         },
         "skin": {
-          "type": "object",
+          "dataType": "object",
           "properties": {
             "type": {
-              "type": "string",
+              "dataType": "string",
               "minLength": 1
             }
           },
@@ -171,14 +171,14 @@ Options:
           ]
         },
         "taste": {
-          "type": "object",
+          "dataType": "object",
           "properties": {
             "type": {
-              "type": "string",
+              "dataType": "string",
               "minLength": 1
             },
             "minimum": {
-              "type": "number"
+              "dataType": "number"
             }
           },
           "required": [
